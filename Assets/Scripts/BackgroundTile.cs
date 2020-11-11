@@ -1,18 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BackgroundTile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject[] dots;
+
+    private void Start()
     {
-        
+        Initialize();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Initialize()
     {
-        
+        int dotUse = Random.Range(0,dots.Length);
+        GameObject dot = Instantiate(dots[dotUse], transform.position, Quaternion.identity,transform);
+        dot.name = name;
+
     }
 }
