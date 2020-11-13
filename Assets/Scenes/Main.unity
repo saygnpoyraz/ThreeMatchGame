@@ -150,19 +150,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6869f8623fe1f419e65056d8fcbc7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
   width: 7
   height: 10
+  offSet: 0
+  colors:
+  - {r: 0.8584906, g: 0.020247417, b: 0.06406473, a: 1}
+  - {r: 0, g: 0.39607847, b: 1, a: 1}
+  - {r: 0.21176472, g: 0.7019608, b: 0.49411768, a: 1}
+  - {r: 1, g: 0.67058825, b: 0, a: 1}
+  - {r: 1, g: 0.3372549, b: 0.18823531, a: 1}
+  - {r: 0.39607847, g: 0.32941177, b: 0.75294125, a: 1}
+  - {r: 0, g: 0.72156864, b: 0.85098046, a: 1}
+  dotPrefab: {fileID: -6290691569037251601, guid: bc075a7087234ad43bed16e67925800a,
+    type: 3}
   tilePrefab: {fileID: 6933028423732307434, guid: 4d0e70e393f9b944b85fcc9ff39b89e6,
     type: 3}
-  dots:
-  - {fileID: 659481855595583793, guid: 31ff8ce44d50ee345b87e23036db0c5b, type: 3}
-  - {fileID: 4375830770272534995, guid: 9e60c74bebc0a134f9e60d709ccdec4a, type: 3}
-  - {fileID: 7781962145199156401, guid: 6b8fd15f2f6517c43812b0286e4e4129, type: 3}
-  - {fileID: 2348138522299420464, guid: 014fec41b0a0c094f91aefb6bf65151b, type: 3}
-  - {fileID: 1231638795919200002, guid: ca63b04d42fe8424abc6dbd9080a3d96, type: 3}
-  - {fileID: 7446664897547112835, guid: ecaad00a7ad743e4e97684ffcf27776b, type: 3}
-  - {fileID: 459928170596308474, guid: 65c93574739f8fb4b9d478416bad7427, type: 3}
-  - {fileID: 8068308349684498894, guid: 8bf900961e2e2934bbd570b6d6255c00, type: 3}
+  destroyEffect: {fileID: 7968563854924288499, guid: 648630c2dab2c0e40a53a13c20c26875,
+    type: 3}
 --- !u!4 &104447099
 Transform:
   m_ObjectHideFlags: 0
@@ -259,4 +264,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2051712080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2051712082}
+  - component: {fileID: 2051712081}
+  m_Layer: 0
+  m_Name: MatchFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2051712081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051712080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8213ae3cca7d7a643b57917d30c1f091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMatches: []
+--- !u!4 &2051712082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051712080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4438754, y: 3.0662265, z: -0.36296076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
